@@ -1,7 +1,7 @@
 // src/lib/server/auth.ts
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import { User, AuditLog } from '$lib/server/db';  // import Mongoose modelů
+import { User, AuditLog } from '$lib/server/db'; // import Mongoose modelů
 
 const JWT_SECRET = process.env.JWT_SECRET || 'default_secret_key';
 

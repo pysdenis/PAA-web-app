@@ -12,7 +12,7 @@ const connectDb = async () => {
 			process.exit(1);
 		}
 		await mongoose.connect(dbUri, {
-			dbName: 'TODO',
+			dbName: 'TODO'
 		});
 	} catch (error) {
 		console.error('Chyba při připojování k databázi MongoDB:', error);
@@ -21,7 +21,6 @@ const connectDb = async () => {
 };
 
 export default connectDb;
-
 
 // Definice schémat (Mongoose Schemas & Models):
 const { Schema } = mongoose;
